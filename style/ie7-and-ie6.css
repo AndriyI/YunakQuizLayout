@@ -1,0 +1,11 @@
+		div.main_container {
+		display:table;
+		height: 100%;
+		}
+		div.content{
+
+		}
+		div.footer{
+		padding-top: 20px;
+		margin-top: 60px;
+		}

@@ -1,0 +1,574 @@
+﻿$main_menu_bg:url("background/main_menu3.gif");/*  main_menu.gif, main_menu2.gif, main_menu3.gif */
+$main_menu_bg_hover:url("background/main_menu3hover.gif");/* , main_menu_hover.gif,main_menu2hover.gif,main_menu3hover.gif */
+$login_bg_color: #9999ff;/* #FFB253, #b5c4bf, #9999ff*/
+$login_border_color: #333399; /* #FFB253, #4e5553, ,#ff7022, #333399*/
+$login_btn_bg: url("background/login_sbm3.gif") repeat-x;/*login_sbm.gif, login_sbm2.gif, login_sbm3.gif  */
+$login_btn_bg_hover: url("background/login_sbm3hover.gif") repeat-x; /*login_sbm_hover.gif, login_sbm2hover.gif, login_sbm3hover.gif  */
+$login_btn_border: #4e5553;
+$login_btn_font_color: #fff ;
+$body_bg: #FBF7FF ;/*  */
+$font_color: #996666;/* #333333,#000033, #996666, Кольори хедерів та параграфів*/
+$login_img_visibility: hidden;
+$logo_bg: url("background/logo2.gif") ; /* logo.gif logo2.gif, logo3.gif*/
+$adm_panel_table_bg: #EFEFEF; /* #ffcccc, #e6e6e6, #EFEFEF */
+$adm_panel_table_border: #333333; /* #996666, #333333, #663366 */
+$adm_panel_btn_font_color: #333333; /*  #996666, #333333, #663366 */
+/***********************************************************************************************************************************************/
+@charset "UTF-8";
+/*  main_menu.gif, main_menu2.gif, main_menu3.gif */
+/* , main_menu_hover.gif,main_menu2hover.gif,main_menu3hover.gif */
+/* #FFB253, #b5c4bf, #9999ff*/
+/* #FFB253, #4e5553, #333399*/
+/*login_sbm.gif, login_sbm2.gif, login_sbm3.gif  */
+/*login_sbm_hover.gif, login_sbm2hover.gif, login_sbm3hover.gif  */
+/*  */
+/* #333333,#000033, #000033, Кольори хедерів та параграфів*/
+/* logo.gif logo2.gif, logo3.gif*/
+/* #ffcccc, #e6e6e6, #cc99cc */
+/* #996666, #333333, #663366 */
+/*  #996666, #333333, #663366 */
+html, body{
+ height: 100%;
+ }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.header img {
+  background-image: $logo_bg;
+  border: none; }
+
+textarea {
+  overflow: hidden;
+  resize: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 28px;
+  color: $font_color;
+  margin-left: 15px; }
+
+p {
+  line-height: 18px;
+  color: $font_color;
+  margin-left: 25px; }
+
+a {
+  text-decoration: none;
+  color: #333333; }
+
+body {
+  background: $body_bg; }
+
+.main_container {
+  min-height: 100%;
+  width: 900px;
+  /*max-width: 1100px;
+  min-width: 800px;*/
+  margin: 0 auto;
+  }
+
+.content input[type="submit"], .content button {
+  font: 14px Calibri, sans-serif; }
+
+.header {
+  width: 900px;
+  height: auto; }
+
+/* Логотип */
+.header .logo {
+  height: 130px;
+  width: 565px;
+  float: left;
+  background: $logo_bg no-repeat; }
+
+.header .logo img {
+  visibility: $login_img_visibility; }
+
+/* Форма для авторизації */
+.header .login {
+  height: 130px;
+  width: 330px;
+  float: left;
+  border: 2px solid $login_border_color;
+  background-color: $login_bg_color; }
+
+.header .login div {
+  width: 310px;
+  height: 25px;
+  margin: 8px 5px 0;
+  padding-left: 5px;
+  font: 14px Arial, Helvetica, sans-serif;
+  line-height: 25px; }
+
+/* */
+/*.header .login div *{
+float: right;
+display: inline-block;
+}*/
+div.header div.login div label, div.header div input.login_entr_btn {
+  float: left; }
+
+div.header div input.login_entr_btn:hover {
+  background: $login_btn_bg_hover; }
+
+div.header div input.login_entr_btn {
+  width: 95px;
+  height: 35px;
+  margin: 0;
+  margin-left: -3px;
+  padding: 0;
+  font: 14px Calibri, sans-serif;
+  background: $login_btn_bg;
+  border: 1px solid $login_btn_border;
+  color: $login_btn_font_color; }
+
+.header .login div span {
+  float: right; }
+
+.header .login div span span {
+  float: none; }
+
+.header .login div input[type="text"], .header .login div input[type="password"], .header .login div span {
+  float: right; }
+
+.header .login div:last-child {
+  height: 24px; }
+
+.login_txt_area {
+  width: 160px;
+  float: right; }
+
+.header .login div span {
+  font-size: 12px;
+  line-height: 35px; }
+
+.header .login div span a {
+  color: #333; }
+
+.header .login div span a:hover {
+  text-decoration: underline; }
+
+/* Горизонтальне меню */
+.main_menu {
+  float: left;
+  width: 900px;
+  background: $main_menu_bg; }
+
+.header .main_menu li {
+  display: inline;
+  margin: 0;
+  float: left; }
+
+.header .main_menu a {
+  height: 30px;
+  margin: 0;
+  width: auto;
+  padding: 5px 20px;
+  display: block;
+  float: left;
+  font: bold 16px Arial, Helvetica, sans-serif;
+  line-height: 30px;
+  color: #333;
+  background: $main_menu_bg; }
+
+.header .main_menu a:hover {
+  background: $main_menu_bg_hover; }
+
+/* Контент */
+.content {
+  width: 900px;
+  min-height: 330px;
+  height: auto;
+  overflow: auto;
+  padding-bottom: 40px;
+  float: left;
+  font-family: Arial, Helvetica, sans-serif; }
+
+/* Футер */
+.footer{
+position: relative;
+height: 40px;
+/*padding-top: 20px;*/
+margin-top: -200px;
+clear:both;
+width: 900px;
+margin: -60px auto 0;
+}
+.footer .copyright{
+display:inline;
+float: left;
+width: 300px;
+margin-left: 300px;
+}
+.footer .w3_icon{
+display:inline;
+float:right;
+}
+div.footer div.w3_icon p{
+float: left;
+}
+.footer img{
+text-decoration:none;border: none;
+}
+/* Головна сторінка */
+.main_page a {
+  text-decoration: underline;
+  color: #3388FF;
+  margin-left: 25px; }
+
+/* Пункти меню тести і контент сторінки з описами тестів */
+.tests_page div {
+  float: left;
+  height: auto;
+  width: 900px;
+  margin-top: 5px; }
+
+.tests_page div ul li {
+  display: inline;
+  float: left; }
+
+.tests_page div ul li a {
+  display: block;
+  float: left;
+  height: 18px;
+  width: auto;
+  font: 12px Arial, Helvetica, sans-serif; }
+
+.tests_page div form {
+  margin-top: 50px; }
+
+.tests_page div form select {
+  margin-left: 120px;
+  width: 180px; }
+
+.tests_page div form input[type="submit"] {
+  margin-left: 120px;
+  width: 190px;
+  height: 80px; }
+
+.tests_page .tests_description_content {
+  border-top: 2px solid black; }
+
+/* Сторінка для реєстрації нового користувача*/
+.registration form {
+  height: auto;
+  width: 400px; }
+
+.registration form p {
+  width: 380px;
+  height: 30px; }
+
+.registration div {
+  width: 380px;
+  margin: 0 auto;
+  height: 100%; }
+
+.registration form p label {
+  line-height: 24px;
+  float: left;
+  clear: both; }
+
+.registration form p:first-child {
+  margin-top: 30px; }
+
+.registration form p:last-child {
+  height: 50px;
+  margin-top: 40px; }
+
+.registration form input {
+  float: right;
+  width: 170px; }
+
+#captcha {
+  display: inline-block;
+  height: 40px;
+  width: 130px;
+  border: 0.5px solid #333333;
+  background-color: #999; }
+
+#enter_captcha {
+  margin-top: 20px; }
+
+.registration .reg_btn {
+  height: 40px;
+  width: 130px; }
+
+/* Контакти */
+.contacts p {
+  line-height: 12px; }
+
+.contacts input[type="submit"] {
+  display: block;
+  height: 35px;
+  width: 85px;
+  margin-left: 15px;
+  margin-top: 15px; }
+
+/* Процес тестування */
+.test_process div ul li {
+  margin-left: 35px; }
+
+.test_process div:last-child * {
+  margin-top: 15px;
+  height: 35px;
+  width: 100px;
+  float: left; }
+
+.send_feedback_btn {
+  display: block;
+  height: 35px;
+  width: 100px; }
+/* перегляд результатів тесту */
+.answers .correct_answer_icon, .answers .wrong_answer_icon{
+height: 20px;
+width: 20px;
+position: relative;
+vertical-align: middle;
+}
+/* Додавання тесту */         /* + */
+.add_test form p span {
+  float: right; }
+
+.add_test form p label.test_add_descr {
+  float: left; }
+
+.add_test_cat_name input {
+  width: 170px; 
+ }
+
+.add_test .add_test_cat_name {
+  float: left;
+  height: auto;
+  width: 370px; }
+
+.add_test_cat_name p {
+  margin-top: 10px;
+  line-height: 24px;
+  float: left; }
+
+.add_test p {
+  width: 350px;
+  margin-left: 15px; }
+.add_test p .form_elem_text, .add_test p select {
+  float: right;
+  width: 170px; 
+}
+.add_test p .form_elem_text, .add_test p .form_elem_submit {
+float: right;
+
+}
+.add_test p select {
+  width: 175px; }
+#quest2 label, #quest2 button{
+float: left;
+}
+#quest2 p{
+clear: both;
+margin-top: 5px;
+}
+#quest1 {
+  height: 20px;
+  margin-top: 10px;
+  margin-left: 7px;
+  width: 400px;
+  float: left;
+  clear: both; }
+#quest1 img{
+height: 20px;
+width: 20px;
+float: left;
+margin-left: 5px;
+border: none;
+}
+#quest2 {
+  margin-top: 15px;
+  margin-left: 7px;
+  width: 380px;
+  float: left;
+  clear: both;
+}
+
+.add_test #quest1 div, .add_test #quest2 div, .setting #quest1 div, #quest2 div {
+  width: 355px;
+  height: 20px;
+  float: left;
+  text-align: center;
+  background-color: #e6e6e6;
+  display: inline-block; }
+
+.add_test i.left, .add_test i.right, .setting i.left, .setting i.right {
+  display: inline-block;
+  float: left;
+  height: 20px;
+  width: 6px; }
+
+.add_test i.left, .setting i.left {
+  background: url("background/bg_test_adding_left.gif") no-repeat; }
+
+.add_test i.right, .setting i.right {
+  background: url("background/bg_test_adding_right.gif") no-repeat; }
+
+.add_test button, .add_test .form_elem_submit {
+  height: 50px;
+  width: 140px;
+  float: left;
+  margin-top: 15px; }
+
+
+
+.add_test textarea {
+  margin-top: 5px;
+  float: left;
+  border: 1px solid #333;
+  width: 330px;
+  padding: 0;
+  margin-left: -10px;
+  margin-bottom: 15px; }
+
+/*Під Меню в налаштуваннях */
+.setting .setting_menu {
+  margin-top: 5px;
+  height: 25px;
+  border-bottom: 2px solid #333333; }
+
+.setting .setting_menu ul li {
+  display: inline; }
+
+.setting .setting_menu ul li a {
+  display: block;
+  float: left;
+  height: 18px;
+  width: auto;
+  font: 12px Arial, Helvetica, sans-serif; }
+
+/* Налаштування новини тесту */
+.setting p a {
+  color: #3388FF;
+  text-decoration: underline; }
+
+/* Налаштування перевірка тесту */
+.tests_chk_list {
+  float: left;
+  height: auto;
+  width: 270px; 
+  }
+  .tests_chk_list a.active{
+  text-decoration: underline;
+  color:#3388FF;
+  font-weight: bold;
+}
+.tests_chk_list a:hover {
+  text-decoration: underline;
+  color:#3388FF;
+  font-weight: bold;
+}
+.test_chk_info {
+  float: left;
+  height: auto;
+  width: 400px;
+  border-top: 2px solid #333;
+  margin-top: 5px;
+  clear: both;
+  display:block;
+/*  padding: 15px;background: url("background/test_info_chk.gif") top left no-repeat; + */
+  }
+
+.test_chk_info p {
+  display: block;
+  line-height: 24px;
+  margin:0; }
+
+.test_chk_info p span {
+  float: left;
+  clear: left; }
+
+#test_cat_chk, #test_date_chk, #user_name_chk, #test_name_chk {
+  float: right;
+  clear: none;
+  width: 170px; }
+
+.test_chk_form {
+  clear: left; }
+
+.test_chk_form div:first-child {
+  float: left;
+  height: auto;
+  width: auto; }
+
+.setting #quest1 {
+  float: left;
+  margin-top: 15px; }
+
+.remark {
+  height: auto;
+  width: 400px;
+  float: left;
+  margin-left: 20px; }
+
+.remark h2 {
+  margin-top: 10px; }
+
+.remark textarea {
+  margin-left: 25px; }
+
+.remark button {
+  margin-left: 25px; }
+
+/* Налаштування модифікація тестів */
+.setting_modifying div {
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 350px; }
+
+.setting_modifying div *:last-child {
+  float: right; }
+
+.setting_modifying div select {
+  width: 140px; }
+
+.setting_modifying div:last-child * {
+  height: 35px;
+  width: 100px;
+  float: left; }
+
+/* Налаштування, адміністраторська панель */
+.setting .admin_panel {
+  margin-top: 15px;
+  height: auto;
+  width: 500px;
+  margin: 15px auto 0; }
+
+.setting .admin_panel table {
+  border-collapse: collapse;
+  font: Tahoma, sans-serif;
+  font-size: 14px; }
+
+.setting .admin_panel table th, .setting .admin_panel table td {
+  border: 2px solid $adm_panel_table_border;
+  padding: 5px 15px;
+  background-color: $adm_panel_table_bg;
+  text-align: center; }
+
+.setting .admin_panel table th {
+  font-size: 16px;
+  padding: 12px; }
+.adm_panel_btn {
+  margin-top: 15px;
+  width: 500px;
+  height: auto;
+  padding: 0; }
+
+.admin_panel i {
+  display: block;
+  height: 35px;
+  width: 1px;
+  border: none; }
+
+.adm_panel_btn * {
+  border: 2px solid #3388ff;
+  float: left;
+  width: 110px;
+  font: bold Tahoma, sans-serif;
+  color: $adm_panel_btn_font_color;
+  height: 35px; }
